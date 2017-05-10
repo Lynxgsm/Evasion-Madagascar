@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/semantic.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/angular.min.js"></script>
+    <script src="assets/js/angular-route.min.js"></script>
+    <script src="assets/js/semantic.js"></script>
+    <script src="assets/js/script.js"></script>
+    <style>
+        .container {
+            margin-top: 1%;
+            margin-left: 5%;
+        }
+    </style>
+</head>
+
+<body ng-controller="mainController">
+    <h1 class="text">Cahier de Charge Evasion Madagascar</h1>
+    <div class="container">
+        <h2>{{titre}}</h2>
+    </div>
+    <br>
+    <div ng-view class="animate fadeIn"></div>
+</body>
+
+</html>
