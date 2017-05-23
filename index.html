@@ -13,21 +13,42 @@
     <script src="assets/js/angular-route.min.js"></script>
     <script src="assets/js/semantic.js"></script>
     <script src="assets/js/script.js"></script>
-    <style>
-        .container {
-            margin-top: 1%;
-            margin-left: 5%;
-        }
-    </style>
 </head>
 
 <body ng-controller="mainController">
-    <h1 class="text">Cahier de Charge Evasion Madagascar</h1>
-    <div class="container">
-        <h2>{{titre}}</h2>
+    <div class="ui container">
+        <h1 class="text">Cahier de Charge Evasion Madagascar</h1>
+        <h2 class="animate fadeIn centered">{{titre}}</h2>
+        <br>
+        <div class="ui fluid card">
+            <div class="content">
+                <h4>Barre de navigation</h4>
+                <ul>
+                    <li>Logo du site</li>
+                    <li>Barre de recherche pour choisir une destination spécifique ou thématique</li>
+                    <li><a href="#destination">Lien pour toutes les destinations</a></li>
+                    <li><a href="#inscription">Lien pour une inscription sur ce site</a></li>
+                    <li><a href="#user">Lien pour se connecter au site</a></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div ng-view class="animate fadeIn"></div>
+        <div class="ui card fluid">
+            <div class="content">
+                <h4>Footer</h4>
+                <ul>
+                    <li>Newsletter - Restez à l'affût des bons plans de voyage</li>
+                    <li>Lien pour nous contactez</li>
+                    <li>Lien pour les mentions légales</li>
+                    <li>Lien pour voir nos concepts</li>
+                    <li>Laisser l'utilisateur s'exprimer - Vos suggestions</li>
+                    <li>Liens vers des réseaux sociaux</li>
+                    <li>&copy; TripConnexion</li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <br>
-    <div ng-view class="animate fadeIn"></div>
 </body>
 
 </html>

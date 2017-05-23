@@ -3,19 +3,6 @@
         <div class="eight wide column">
             <div class="ui fluid card">
                 <div class="content">
-                    <h4>1 - Navbar</h4>
-                    <ul>
-                        <li>Logo du site</li>
-                        <li>Barre de recherche pour choisir une destination spécifique ou thématique</li>
-                        <li><a href="#destination">Lien pour toutes les destinations</a></li>
-                        <li>Lien pour le forum du site</li>
-                        <li>Lien pour une inscription sur ce site</li>
-                        <li>Lien pour se connecter au site</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="ui fluid card">
-                <div class="content">
                     <h4>2 - Header</h4>
                     <ul>
                         <li>Slogan au centre</li>
@@ -49,9 +36,20 @@
                     <h4>4 - Section 2</h4>
                     <p>Nos coups de coeur voyage</p>
                     <ul>
-                        <li>Image + description du lieu / thème</li>
+                        <li><a href="#voyage">Image + description du lieu / thème</a></li>
                         <li>Affichage des prestataires qui propose le voyage</li>
                         <li>Un bouton qui permet de découvrir tous les voyages des experts locaux</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ui fluid card">
+                <div class="content">
+                    <h4>5 - Section 3</h4>
+                    <p>Nos hôtels</p>
+                    <ul>
+                        <li><a href="#voyage">Image + description du lieu / hôtel</a></li>
+                        <li>Description de l'hôtel</li>
+                        <li>Un bouton qui permet de découvrir les services de l'hôtel</li>
                     </ul>
                 </div>
             </div>
@@ -59,10 +57,11 @@
         <div class="eight wide column">
             <div class="ui card fluid">
                 <div class="content">
-                    <h4>5 - Section 3</h4>
+                    <h4>6 - Section 4</h4>
                     <p>Les experts du voyage sur mesure</p>
                     <ol>
-                        <li>Présentez les meilleures agences de voyage / ceux que l'on veut mettre en avant</li>
+                        <li>
+                            <a href="#" id="detailPrestataire">Présentez les meilleures agences de voyage / ceux que l'on veut mettre en avant</a></li>
                         <li>Un bouton qui permet de dénicher et contactez les meilleurs créateurs de voyage personnalisés</li>
                     </ol>
                     <br>
@@ -70,7 +69,7 @@
             </div>
             <div class="ui card fluid">
                 <div class="content">
-                    <h4>6 - Section 4</h4>
+                    <h4>7 - Section 5</h4>
                     <p>Trouvez vos vols aux meilleurs prix en un seul clic</p>
                     <ol>
                         <li>Lieu et date de départ</li>
@@ -83,7 +82,7 @@
             </div>
             <div class="ui card fluid">
                 <div class="content">
-                    <h4>7 - Section 5</h4>
+                    <h4>8 - Section 6</h4>
                     <p>Quelques suggestions</p>
                     <ul>
                         <li>Guides de voyages</li>
@@ -93,20 +92,35 @@
                     </ul>
                 </div>
             </div>
-            <div class="ui card fluid">
-                <div class="content">
-                    <h4>8 - Footer</h4>
-                    <ul>
-                        <li>Newsletter - Restez à l'affût des bons plans de voyage</li>
-                        <li>Lien pour nous contactez</li>
-                        <li>Lien pour les mentions légales</li>
-                        <li>Lien pour voir nos concepts</li>
-                        <li>Laisser l'utilisateur s'exprimer - Vos suggestions</li>
-                        <li>Liens vers des réseaux sociaux</li>
-                        <li>&copy; TripConnexion</li>
-                    </ul>
-                </div>
+        </div>
+    </div>
+</div>
+
+<div class="ui modal">
+    <div class="header">Header</div>
+    <div class="image content">
+        <img class="image" src="assets/img/placeholder.png">
+        <div class="description">
+            <ul>
+                <li>Images représentant le pays + Nom de l'agence de voyages concerné + petite description du voyage</li>
+                <li>Icône de l'agence</li>
+            </ul>
+            <hr>
+            <div class="actions">
+                <ul>
+                    <li>Liste des tags</li>
+                    <li>Un bouton "Envoyer un message" pour envoyer un message à l'agence</li>
+                    <li>Un bouton "Obtenir un devis" pour demander un devis à l'agence</li>
+                    <li><a href="#prestataire" class="ui black deny button">Un bouton "Voir la présentation détaillée" pour voir en détail la page personnalisée du préstataire sur le site d'Evasion Madagascar</a></li>
+                </ul>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    $('#detailPrestataire').click(function(e) {
+        e.preventDefault();
+        $('.ui.modal').modal('show');
+    })
+</script>
